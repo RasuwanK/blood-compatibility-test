@@ -1,0 +1,13 @@
+
+/* Open sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    font-family: 'Open sans';
+}
+
+.main {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
