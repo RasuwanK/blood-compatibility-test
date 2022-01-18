@@ -1,6 +1,6 @@
 import React from 'react';
 import Titlebar from './components/Titlebar';
-import Results from './components/Results';
+import InputField from './components/InputField';
 
 // Css
 import './styles/App.css';
@@ -8,8 +8,8 @@ import './styles/App.css';
 const App = () => {
     return (
         <div className='main'>
-            <Titlebar />
-            <Results />           
+            <Titlebar title="Red blood tester" />
+            <InputField />           
         </div>
     );
 }
