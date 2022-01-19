@@ -1,0 +1,15 @@
+
+.sel {
+    border:none;
+    background-color: rgba(77, 10, 10, 0.651);
+    padding:10px;
+    font-size:20px;
+    color:white;
+    outline:none;
+    width:100%;
+}
+
+
+.opt {
+    background-color:rgba(99, 8, 8, 0.534);
+}

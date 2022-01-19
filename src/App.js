@@ -1,5 +1,6 @@
 import React from 'react';
 import Titlebar from './components/Titlebar';
+import Select from './components/Select';
 
 // Css
 import './styles/App.css';
@@ -17,7 +18,12 @@ const App = () => {
             </section>
             <div className='tool'>
                 <div className='inputs'>
-                    
+                    <Select
+                    items={['apple','orange']}
+                     />
+                    <Select 
+                    items={['red','green']} 
+                    />
                 </div>
                 <button className='btn'>Check</button>
             </div>
