@@ -18,7 +18,8 @@ const Titlebar = (props) => {
         backgroundColor:'#900c3f29',
         transitionProperty:"all",
         transitionDuration:"0.2s",
-        cursor:"pointer"
+        cursor:"pointer",
+        textShadow:"none"
     }
 
     return (
