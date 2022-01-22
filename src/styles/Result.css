@@ -5,10 +5,7 @@
   height:300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   column-gap: 10px;
-  background-color: var(--light-green);
 }
 
 .result-title {
