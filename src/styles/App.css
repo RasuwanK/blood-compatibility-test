@@ -1,6 +1,7 @@
 
 /* Open sans font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('./Globals.css');
 
 * {
     font-family: 'Open sans';
@@ -14,7 +15,7 @@
 }
 
 .main {
-    background-color:#900C3F;
+    background-color:var(--red-light);
     display:flex;
     flex-direction:column;
     row-gap:30px;
@@ -26,23 +27,24 @@
     display:flex;
     flex-direction: column;
     align-items:center;
+    row-gap:30px;
 }
 
 .inputs {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    width:100%;
+    width:80%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:4px;
 }
 
 .btn {
     border:none;
-    background-color:#3a9b0db4;
+    background-color:var(--light-green);
     color:white;
     padding:10px;
-    width:170px;
-    height:70px;
-    font-size:29px;
+    width:140px;
+    height:50px;
+    font-size:16px;
     text-align:center;
     border-radius:6px;
     cursor:pointer;
@@ -50,4 +52,21 @@
 
 .btn:hover {
     background-color: #3a9b0d57;
+}
+
+@media only screen and (max-width:510px) {
+    .inputs {
+        grid-template-columns:1fr;
+    }
+
+    .inputs #caption-1 {
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+
+    .inputs #caption-2 {
+        grid-row-start:3;
+        grid-row-end:4;
+    }
+
 }

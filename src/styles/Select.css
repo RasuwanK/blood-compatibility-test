@@ -1,15 +1,21 @@
 
+@import url('./Globals.css');
+
 .sel {
     border:none;
-    background-color: rgba(77, 10, 10, 0.651);
+    background-color: var(--red-dark);
     padding:10px;
     font-size:20px;
     color:white;
     outline:none;
     width:100%;
+    border-radius:7px;
 }
 
-
 .opt {
-    background-color:rgba(99, 8, 8, 0.534);
+    background-color:rgba(170, 7, 7, 0.534);
+    border:none;
+    padding:10px;
+    border-radius:7px;
+    text-align: center;
 }
