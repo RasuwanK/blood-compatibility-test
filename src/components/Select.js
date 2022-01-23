@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Select.css";
 
 const Select = (props) => {
-  const listItems = props.items;
 
   return (
     <select
@@ -10,9 +9,9 @@ const Select = (props) => {
       placeholder={props.placeholder}
       className="sel txt"
     >
-      {listItems.map((item, index) => {
+      {props.items.map((item, index) => {
         return (
-          <option key={index} className="opt">
+          <option value={item} key={index} className="opt">
             {item}
           </option>
         );
